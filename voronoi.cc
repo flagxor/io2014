@@ -480,7 +480,7 @@ void Voronoi::HandleEvent(PSEvent* ps_event) {
         int num_points = dictionary.Get("value").AsInt();
         point_count_ = std::min(kMaxPointCount, std::max(0, num_points));
       } else if (message == "set_threads") {
-        pp::Var value(dictionary.Get("valu"));
+        pp::Var value(dictionary.Get("value"));
         if (!value.is_int()) __builtin_trap();
         int thread_count = value.AsInt();
         delete workers_;
