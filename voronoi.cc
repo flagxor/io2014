@@ -503,7 +503,7 @@ void Voronoi::Update() {
   if (NULL == ps_context_->data)
     return;
   assert(is_pow2(ps_context_->width));
-  assert(is_pow2(ps_context_->hieght));
+  assert(is_pow2(ps_context_->height));
 
   // When benchmarking is running, don't update display via
   // PSContext2DSwapBuffer() - vsync is enabled by default, and will throttle
